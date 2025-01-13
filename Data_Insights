@@ -1,0 +1,24 @@
+# Findings & Insights:
+
+## Data Sourcing:
+- Data is downloaded from kaggle, dataset- https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast
+- Dataset consist of data of Walmart stores sales in year 2010, 2011, 2012.
+- Provides features such as Date, Markdowns, Holidays, FuelPrice, Temperature, CPI.
+
+## Data Cleaning:
+- Very less null values were found in the columns
+- I choose rows with values greater than 0 for weekly sales. Nearly 0.3% values were negative so i dropped them.
+- Null values in the Markdown column were changed to zero, for better calculation purpose.
+
+## Explorations:
+- There are a total of 45 stores in the dataset, with total 81 departments as department A,B and C.
+- The holiday dates in the dataset shows four main holidays which are Christmas, Thanksgiving, SuperBowl and Labor Day.
+- So the weekly sales were compared with each holiday dates to get proper insights about weekly sales on specific holidays.
+- Thanksgiving showed the most effect on sales, while other holidays had no great differences.I have also checked for dates immediate before Christmas    which showed a great jump in sales than on normal days.
+- Stores has 3 types as A, B and C according to their sizes. Almost half of the stores are bigger than 150000 and categorized as A. According to type,    sales of the stores are changing.
+- Department 72 has the highest weekly sales but on average department 92 is seen as the highest. It is observed that top five highest weekly sales are   from department 72 on Thanksgiving dates.
+- Talking about stores, store no. 10 and 35 have the highest weekly sales and on an average store no. 4 and 20 are the highest in weekly sales. This      change is observed due to seasonal sales.
+- Year 2010 has higher sales than 2011 and 2012. But, November and December sales are not in the data for 2012. Even without highest sale months, 2012    is not significantly less than 2010, so it can be assumed that 2012 could have higher sales.
+- It is obviously seen that week 51 and 47 have higher values and 50-48 weeks follow them. Interestingly, 5th top sales belongs to 22th week of the       year. This results show that Christmas, Thankgiving and Black Friday are very important than other weeks for sales and 5th important time is 22th       week of the year and it is end of the May, when schools are closed. Most probably, people are preparing for holiday at the end of the May.
+- January sales are significantly less than other months.
+- CPI, temperature, unemployment rate and fuel price have no pattern on weekly sales.
